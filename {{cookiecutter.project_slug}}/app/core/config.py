@@ -25,5 +25,3 @@ logging.basicConfig(
 )
 logger.configure(handlers=[{"sink": sys.stderr, "level": LOGGING_LEVEL}])
 
-MODEL_PATH = config("MODEL_PATH", default="{{cookiecutter.slt_model_path}}")
-MODEL_NAME = config("MODEL_NAME", default="{{cookiecutter.slt_model_name}}")

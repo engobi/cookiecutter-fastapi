@@ -7,13 +7,6 @@ ifeq ($(TIMEOUT),)
 TIMEOUT := 60
 endif
 
-ifeq ($(MODEL_PATH),)
-MODEL_PATH := {{cookiecutter.slt_model_path}}
-endif
-
-ifeq ($(MODEL_NAME),)
-MODEL_NAME := {{cookiecutter.slt_model_name}}
-endif
 
 # Target section and Global definitions
 # -----------------------------------------------------------------------------
@@ -25,8 +18,8 @@ test:
 	poetry run pytest tests -vv --show-capture=all
 
 install: generate_dot_env
-	pip install --upgrade pip
-	pip install poetry
+	pip3 install --upgrade pip
+	pip3 install poetry
 	poetry install
 
 run:
