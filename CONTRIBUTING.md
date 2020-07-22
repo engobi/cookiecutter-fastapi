@@ -42,11 +42,30 @@ Files related to application are in the `app` or `tests` directories.
 Application parts are:
 
     app
-    ├── api              - web related stuff.
-    │   └── routes       - web routes.
+    ├── rooter           - web routes.
     ├── core             - application configuration, startup events, logging.
-    ├── models           - pydantic models for this application.
-    ├── services         - logic that is not just crud related.
-    └── main.py          - FastAPI application creation and configuration.
+    ├── controller       -
+    ├── mddleware        - 
+    ├── service          - logic that is not just crud related.
+    ├── entity_service   - logic or sevice models for this application. 
+    ├── entity           - physical models from database.
+    ├── main.py          - FastAPI application creation and configuration.
+    │
+    doc
+    ├── .gitignore
+    ├── openapi.ym       - documentation for this project
+    │
+    docker               
+    ├── docker-compose.yml
     ├──
-    tests                - pytest. 
+    tests                
+    ├─ unit              - unit tests
+    ├─ integration       - integration tests
+    ├─ e2e               - end to end tests
+    ├─ _data 
+    │
+    Readme.md
+    │
+    Makefile
+    │
+    Dockerfile

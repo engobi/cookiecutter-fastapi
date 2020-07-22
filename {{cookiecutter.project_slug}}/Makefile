@@ -8,11 +8,11 @@ TIMEOUT := 60
 endif
 
 ifeq ($(MODEL_PATH),)
-MODEL_PATH := {{cookiecutter.machine_learn_model_path}}
+MODEL_PATH := {{cookiecutter.slt_model_path}}
 endif
 
 ifeq ($(MODEL_NAME),)
-MODEL_NAME := {{cookiecutter.machine_learn_model_name}}
+MODEL_NAME := {{cookiecutter.slt_model_name}}
 endif
 
 # Target section and Global definitions

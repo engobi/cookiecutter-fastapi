@@ -1,5 +1,5 @@
 import uvicorn
-from api.routes.api import router as api_router
+from router.api import router as api_router
 from core.config import API_PREFIX, DEBUG, PROJECT_NAME, VERSION
 from core.events import create_start_app_handler
 from fastapi import FastAPI
