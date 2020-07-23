@@ -43,7 +43,7 @@ Application parts are:
 
     app
     ├── rooter           - web routes.
-    ├── core             - application configuration, startup events, logging.
+    ├── config           - application configuration, startup events, logging.
     ├── controller       -
     ├── mddleware        - 
     ├── service          - logic that is not just crud related.
